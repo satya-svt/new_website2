@@ -7,7 +7,7 @@ import ProtectedRoute from './components/ProtectedRoute'
 
 function App() {
   return (
-    <motion.div 
+    <motion.div
       className="min-h-screen bg-gradient-to-br from-black via-gray-900 to-black text-white font-sans"
       initial={{ opacity: 0 }}
       animate={{ opacity: 1 }}
@@ -16,6 +16,7 @@ function App() {
       <Routes>
         <Route path="/" element={<Navigate to="/auth" replace />} />
         <Route path="/auth" element={<AuthPage />} />
+        <Route path="/auth/callback" element={<div>Redirecting...</div>} />
         <Route path="/form" element={
           <ProtectedRoute>
             <UserForm />
