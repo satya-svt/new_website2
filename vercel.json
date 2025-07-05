@@ -1,11 +1,5 @@
 {
   "buildCommand": "npm run build",
   "outputDirectory": "dist",
-  "framework": "vite",
-  "env": {
-    "VITE_SUPABASE_URL": "@VITE_SUPABASE_URL",
-    "VITE_SUPABASE_ANON_KEY": "@VITE_SUPABASE_ANON_KEY",
-    "VITE_GOOGLE_CLIENT_ID": "@VITE_GOOGLE_CLIENT_ID",
-    "VITE_GOOGLE_REDIRECT_URI": "@VITE_GOOGLE_REDIRECT_URI"
-  }
+  "framework": "vite"
 }
